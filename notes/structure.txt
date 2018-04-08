@@ -1,0 +1,10 @@
+Neuron - thing that holds a number (between 0 and 1).
+Weight (numbers) to each of the connections to neurons.
+
+Sum all the weights: w1 * a1 + w2 * a2 + w3 * a3 ... = W
+This sum could be large, so we need a function to squize it to 0 to 1 range, common function for this task is called sigmoid function: 1 / (1 + e^(-x)) = S.
+
+Our sum takes a form of: S(W).
+
+Also there is a "bias": only activate meaningfuly when weight sum > BIAS:
+S(w1 * a1 + w2 * a2 ... - BIAS)
